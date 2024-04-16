@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Translate - Smart Travel Guide</title>
+</head>
+<body>
+    <header>
+        <h1>Smart Travel Guide - Translate</h1>
+        <p>Instant translations to make your travels easier.</p>
+        <div class="right_corner">
+           
+            <a href="#my-journeys">My Journeys</a>
+            <a href="#user-center">User Center</a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="culture.html">Culture</a>
+        <a href="recommendation.html">Recommendations</a>
+    </nav>
+
+    <section id="translate">
+        <h2>Translation Tool</h2>
+        <p>Use our tool below to translate words or phrases:</p>
+        <div>
+            <input type="text" placeholder="Enter text to translate" id="translate-input" style="width: 70%; padding: 10px;">
+            <select id="language-select" style="padding: 10px;">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="zh">Chinese</option>
+                <!-- Add more languages as needed -->
+            </select>
+            <button onclick="translateText()" style="padding: 10px;">Translate</button>
+        </div>
+        <div id="translation-result" style="margin-top: 20px; padding: 20px; background-color: #f8f8f8; border-radius: 5px;">
+            <p>Translation will appear here: </p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; SOEN_FinalProject_2024 Smart Travel Guide.</p>
+    </footer>
+
+
+   
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Culture Insights - Smart Travel Guide</title>
+</head>
+<body>
+    <header>
+        <h1>Smart Travel Guide - Culture</h1>
+        <p>Explore cultural depths of your travel destinations.</p>
+        <div class="right_corner">
+            
+            <a href="#my-journeys">My Journeys</a>
+            <a href="#user-center">User Center</a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="translate.html">Translate</a>
+        <a href="recommendation.html">Recommendations</a>
+    </nav>
+
+    <section id="culture">
+        <h2>Explore Local Culture</h2>
+        <p>Enter a location to learn about its cultural background:</p>
+        <div>
+            <input type="text" placeholder="Enter a location" id="culture-input" style="width: 70%; padding: 10px;">
+            <button onclick="fetchCulture()" style="padding: 10px;">Search</button>
+            <button onclick="resetSearch()" style="padding: 10px;">Reset</button> <!-- Add a reset button -->
+        </div>
+        <div id="culture-result" style="margin-top: 20px; padding: 20px; background-color: #f8f8f8; border-radius: 5px;">
+            <p>Cultural insights will appear here.</p>
+        </div>
+    </section>
+
+    <!-- <section id="hotels">
+        <h2>Recommended Hotels in Cancun</h2>
+        <div class="hotel">
+            <img src="hotel1.jpg" alt="All-Inclusive Resort in Cancun" style="width:100%; height:auto;">
+            <h3>The Royal Sands Resort & Spa</h3>
+            <p>All-inclusive luxury resort perfect for family vacations. Located on one of the most beautiful beaches in Cancun.</p>
+        </div>
+        <div class="hotel">
+            <img src="hotel2.jpg" alt="Beachfront Hotel in Cancun" style="width:100%; height:auto;">
+            <h3>Moon Palace Cancun</h3>
+            <p>Experience top-notch comfort and entertainment at this all-inclusive resort that caters to both couples and families.</p>
+        </div>
+    </section> -->
+
+    <footer>
+        <p>&copy; SOEN_FinalProject_2024 Smart Travel Guide.</p>
+    </footer>
+
+    <script>
+        function fetchCulture() {
+            let location = document.getElementById("culture-input").value.trim().toLowerCase();
+            
+            // Clear previous results
+            document.getElementById("culture-result").innerHTML = "";
+            
+            // Check if the entered location is 'Cancun'
+            if (location === "cancun") {
+                document.getElementById("culture-result").innerHTML = `
+                    <h3>Cultural Insights for Cancun</h3>
+                    <p><strong>Location:</strong> Cancun, Mexico</p>
+                    <p><strong>Language:</strong> Spanish</p>
+                    <p><strong>Notable Festivals:</strong> Day of the Dead, Carnival, Riviera Maya Jazz Festival</p>
+                    <p><strong>Local Cuisine:</strong> Ceviche, Tacos al Pastor, and Chiles en Nogada</p>
+                    <p><strong>Historical Sites:</strong> El Castillo at Chichen Itza, Tulum Ruins</p>
+                    
+                    <h2>Recommended Hotels in Cancun</h2>
+                    <div class="hotel">
+                        <img src="xcaret.jpg" alt="All-Inclusive Resort in Cancun" style="width:50%; height:auto;">
+                        <h3>Hotel Xcaret México</h3>
+                        <p>Is a five-star all-inclusive resort located near Playa del Carmen, a popular tourist destination in Mexico. The hotel's all-inclusive package includes unlimited access to all Xcaret parks, where travelers can enjoy a wide range of activities including water parks, archaeological sites, zoos and beautiful nature.</p>
+                    </div>
+                    <div class="hotel">
+                        <img src="impression.jpg" alt="Beachfront Hotel in Cancun" style="width:50%; height:auto;">
+                        <h3>Impression Moxché by Secrets</h3>
+                        <p>Impression Moxché by Secrets is a high-end adults-only resort located in Playa del Carmen, Mexico, offering all-inclusive luxury, personal butlers and an exclusive spa ideal for those seeking privacy and an exclusive experience.</p>
+                    </div>
+                `;
+            }
+            else if (location === "shanghai") {
+                document.getElementById("culture-result").innerHTML = `
+                    <h3>Cultural Insights for Shanghai</h3>
+                    <p><strong>Location:</strong> Shanghai, China</p>
+                    <p><strong>Language:</strong> Mandarin Chinese</p>
+                    <p><strong>Notable Festivals:</strong> Chinese New Year, Shanghai International Film Festival</p>
+                    <p><strong>Local Cuisine:</strong> Xiaolongbao, Shengjianbao, and Shanghai hairy crab</p>
+                    <p><strong>Historical Sites:</strong> The Bund, Yu Garden, and Jade Buddha Temple</p>
+                    
+                    <h2>Recommended Hotels in Shanghai</h2>
+                    <div class="hotel">
+                        <img src="Jhotel.jpg" alt="Luxury Hotel in Shanghai" style="width:100%; height:auto;">
+                        <h3>J Hotel Shanghai</h3>
+                        <p>J Hotel Shanghai is an ultra-luxury hotel located in the Shanghai Center Tower in the Lujiazui Finance and Trade Zone in Shanghai, China. It is one of the tallest hotels in the world, offering spectacular city views from the 101st to 120th floors.</p>
+                    </div>
+                `;
+            } else if (location === "montreal") {
+                document.getElementById("culture-result").innerHTML = `
+                    <h3>Cultural Insights for Montreal</h3>
+                    <p><strong>Location:</strong> Montreal, Canada</p>
+                    <p><strong>Language:</strong> French, English</p>
+                    <p><strong>Notable Festivals:</strong> Montreal International Jazz Festival, Just for Laughs, Montreal World Film Festival</p>
+                    <p><strong>Local Cuisine:</strong> Poutine, Bagels, Smoked Meat</p>
+                    <p><strong>Historical Sites:</strong> Old Montreal, Notre-Dame Basilica, Mount Royal</p>
+                    
+                    <h2>Recommended Hotels in Montreal</h2>
+                    <div class="hotel">
+                        <img src="fourseason.webp" alt="Luxury Hotel in Montreal" style="width:100%; height:auto;">
+                        <h3>Four Seasons Hotel Montreal</h3>
+                        <p>Experience elegance and luxury at this iconic hotel in the heart of downtown Montreal.</p>
+                    </div>
+                    <div class="hotel">
+                        <img src="lesaint.jpg" alt="Boutique Hotel in Montreal" style="width:100%; height:auto;">
+                        <h3>Le Saint-Sulpice Hotel Montreal</h3>
+                        <p>A charming boutique hotel located in the heart of Old Montreal, offering a blend of modern comfort and historic charm.</p>
+                    </div>
+                `;
+            } else if (location) {  // Checks if some other location was entered
+                document.getElementById("culture-result").innerHTML = `<p>We are working hard to develop recommended routes in '${location}'. See you in the near future!.</p>`;
+            }
+        
+        }
+        function resetSearch() {
+            // Reset the search input field
+            document.getElementById("culture-input").value = "";
+            // Clear the displayed content
+            document.getElementById("culture-result").innerHTML = "<p>Cultural insights will appear here.</p>";
+        }
+    </script>
+    
+</body>
+</html>
