@@ -5,8 +5,12 @@ This is our homepage.
 We plan to divide the site into three sections: real-time translations, introduction to the local culture, and recommended itineraries.
 ![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/a668321f-ed8b-48ad-9345-a970c2c6b83f)
 
-![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/84cb31a4-ebc4-46f9-bc98-29c70444267e)
+This is the real-time translation page, which is not yet fully functional. In the future, Javascript will be added to CODE so that it can do real-time translations in a large enough number of languages.
+![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/fbe792c5-8f6a-478b-8d38-094b17b3581e)
+
+
 On the culture page, we've added several tourist attraction specifics, you can type 'cancun', 'shanghai', and ' montreal '. As it is still in the development stage if you enter other regions, you will be informed that 'we are working hard to develop recommended routes in 'xxx'. See you in the near future!'.
+![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/84cb31a4-ebc4-46f9-bc98-29c70444267e)
 
 Here are the search results you will get if you type in Shanghai：
 ![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/dc662c35-3ab4-4cc8-b93e-073b5c91f5a5)
