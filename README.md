@@ -1,4 +1,9 @@
 # SOEN357_FinalProject
+We're glad you checked out our page!
+We are committed to providing our customers with a perfect pre-trip planning and perfecting the experience while traveling!
+This is our homepage.
+We plan to divide the site into three sections: real-time translations, introduction to the local culture, and recommended itineraries.
+![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/a668321f-ed8b-48ad-9345-a970c2c6b83f)
 
 ![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/84cb31a4-ebc4-46f9-bc98-29c70444267e)
 On the culture page, we've added several tourist attraction specifics, you can type 'cancun', 'shanghai', and ' montreal '. As it is still in the development stage if you enter other regions, you will be informed that 'we are working hard to develop recommended routes in 'xxx'. See you in the near future!'.
