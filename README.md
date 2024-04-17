@@ -43,3 +43,8 @@ In addition, for the Recommendations page, what we have done so far is to provid
 
 The remaining areas may take time to refine：
 ![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/67d854f0-ca7c-4631-865b-91ee0504597d)
+
+
+Also For the customer who book a trip from us will see a deatil in section of myJounrey
+![image](https://github.com/Yaooo00/SOEN357_FinalProject/assets/101379116/4744f6df-e67c-4962-aa7f-d2cf7c7f28ca)
+
